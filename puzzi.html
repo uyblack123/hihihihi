@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Puzzle</title>
+</head>
+<body>
+<img src="https://www.google.com/search?q=%E1%BA%A3nh+%C4%91en&sxsrf=AOaemvKDOPHTMxuoHAoOsiGsKhFIbUS3lQ:1631618081454&tbm=isch&source=iu&ictx=1&fir=Za00Xq7aDVDzeM%252CST8Yjrda5k4BpM%252C_&vet=1&usg=AI4_-kSUfy8zX2CqP7RkvFTijeFF6lfhAQ&sa=X&ved=2ahUKEwjmnp2Bq_7yAhUaZt4KHY9FCZgQ9QF6BAgTEAE#imgrc=Za00Xq7aDVDzeM" id="up" height="150" width="150" onclick="doianh('up')">
+<img src="https://www.google.com/search?q=%E1%BA%A3nh+tr%E1%BA%AFng&sxsrf=AOaemvK_PDD_lIZ-5_Oc0aaU_FUH148NnQ:1631618121388&tbm=isch&source=iu&ictx=1&fir=cncD7TqMakMgVM%252CdIqwzaiXXHoxqM%252C_&vet=1&usg=AI4_-kSzUc5gFBtuBBwZyBdzHoj8ZmIM9Q&sa=X&ved=2ahUKEwjr3KKUq_7yAhVDAN4KHSdUBZMQ9QF6BAgaEAE#imgrc=cncD7TqMakMgVM" id="Dow" height="150" width="150" onclick="doianh('Dow')">
+<p id="result"></p>
+</body>
+<script>
+  let img1 = document.getElementById('up');
+  let img2 = document.getElementById('Dow');
+
+  function doianh(id) {
+    let a = Math.floor(Math.random() * 6) + 1;
+    document.getElementById(id).src = a + '.png'
+    if (img1.src == img2.src) {
+      document.getElementById("result").innerHTML="Year";
+    }
+  }
+</script>
+</html>
